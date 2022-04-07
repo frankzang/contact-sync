@@ -1,0 +1,11 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 164px;
+    background-image: url(../../assets//images/blob.svg);
+    background-position: center 88px;
+    background-repeat: no-repeat;
+}
