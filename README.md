@@ -1,3 +1,11 @@
+# Important links
+
+[Technical Design](https://docs.google.com/document/d/1cpSQcwhIoH6lhWRQcve7btqDyIrxq0yJmQj9W_K_vWY/edit?usp=sharing)
+
+[Video explanation of the app](https://drive.google.com/file/d/1RyZuSCxCIw6m9pRb2trO64nLPoptixRn/view?usp=sharing)
+
+[Demo](https://vocal-gumption-54ea2c.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

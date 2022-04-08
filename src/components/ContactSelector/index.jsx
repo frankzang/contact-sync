@@ -43,7 +43,6 @@ export const ContactSelector = (props) => {
     setIsExpanded(expanded);
 
     const el = listRef.current;
-    const initial = el.getBoundingClientRect();
 
     el.setAttribute('data-expanded', expanded);
     if (!expanded) {
@@ -51,28 +50,6 @@ export const ContactSelector = (props) => {
     } else {
       el.removeAttribute('inert');
     }
-
-    const last = el.getBoundingClientRect();
-
-    const x = initial.width / last.width;
-    const y = initial.height / last.height;
-    const l = initial.left - last.left;
-    const t = initial.top - last.top;
-
-    el.animate?.(
-      [
-        {
-          transform: ` translate3d(${l}px, ${t}px, 1px) scale3d(${x}, ${y}, 1)`,
-        },
-        { transform: `scale(1)` },
-      ],
-      {
-        duration: 300,
-        easing: 'ease-in-out',
-        direction: 'normal',
-        fill: 'forwards',
-      }
-    );
   };
 
   return (
