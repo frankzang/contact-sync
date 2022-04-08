@@ -1,0 +1,41 @@
+.Button {
+    border: none;
+    background-color: transparent;
+    max-width: 132px;
+    margin: 112px 28px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--heading-text);
+}
+
+.Button img {
+    width: 100%;
+    object-fit: contain;
+    transition: transform .3s ease-in-out;
+    margin-bottom: 8px;
+}
+
+.Button[data-status="success"] img {
+    transform: rotate(-180deg);
+}
+
+.Button[data-status="idle"] [data-idle] {
+    opacity: 1;
+}
+
+.Button[data-status="success"] [data-success] {
+    opacity: 1;
+}
+
+.ButtonLabel {
+    position: relative;
+}
+
+.ButtonLabel span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
