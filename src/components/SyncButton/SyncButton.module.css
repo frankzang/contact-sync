@@ -4,6 +4,7 @@
     max-width: 132px;
     margin: 112px 28px;
     cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     color: var(--heading-text);
 }
