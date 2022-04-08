@@ -2,10 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 164px;
+    min-height: 100vh;
+    padding: 164px 10px;
     background-image: url(../../assets//images/blob.svg);
     background-position: center 88px;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+        margin: 50px 0;
+    }
 }
